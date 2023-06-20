@@ -7,7 +7,7 @@ body {
   background-color: hsl(216, 12%, 8%);
 }
 
-.container {
+.review-container {
   background-color: hsl(213, 19%, 18%);
   max-width: 425px;
   height: 425px;
@@ -17,7 +17,7 @@ body {
   border-radius: 5%;
 }
 
-.sub-container {
+.sub-review-container {
   max-width: 80%;
 }
 
@@ -31,7 +31,7 @@ body {
   align-items: center;
 }
 
-.container header {
+.review-container header {
   color: hsl(0, 0%, 100%);
   font-family: "Overpass", sans-serif;
   font-weight: 700;
@@ -39,12 +39,12 @@ body {
   margin-top: 40px;
 }
 
-.container p,
+.review-container p,
 .numbers {
   color: hsl(217, 12%, 63%);
   font-family: "Overpass", sans-serif;
 }
-.container p {
+.review-container p {
   font-size: 15px;
   line-height: 1.5;
 }
@@ -71,5 +71,16 @@ body {
 
 .numbers .circle,
 .submit {
+  transition: .5s ease;
   cursor: pointer;
+}
+
+.submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);;
+}
+
+.numbers .circle:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
 }
