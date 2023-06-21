@@ -7,18 +7,19 @@ body {
   background-color: hsl(216, 12%, 8%);
 }
 
-.review-container {
-  background-color: hsl(213, 19%, 18%);
-  max-width: 425px;
-  height: 425px;
+.main-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(213, 19%, 18%);
+  width: 400px;
+  height: 425px;
   border-radius: 5%;
+  box-sizing: border-box;
 }
 
-.sub-review-container {
-  max-width: 80%;
+.front {
+  padding: 30px;
 }
 
 .circle {
@@ -31,26 +32,29 @@ body {
   align-items: center;
 }
 
-.review-container header {
+.main-container header {
   color: hsl(0, 0%, 100%);
   font-family: "Overpass", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  margin-top: 40px;
 }
 
-.review-container p,
+.front header {
+  margin-top: 20px;
+}
+.main-container p,
 .numbers {
   color: hsl(217, 12%, 63%);
   font-family: "Overpass", sans-serif;
 }
-.review-container p {
+.main-container p {
   font-size: 15px;
+  margin: 0;
   line-height: 1.5;
 }
 
 .numbers {
-  margin: 30px 0px;
+  margin: 10px;
   padding: 0;
   justify-content: space-between;
   display: flex;
@@ -71,16 +75,33 @@ body {
 
 .numbers .circle,
 .submit {
-  transition: .5s ease;
+  transition: 0.5s ease;
   cursor: pointer;
 }
 
 .submit:hover {
   background-color: hsl(0, 0%, 100%);
-  color: hsl(25, 97%, 53%);;
+  color: hsl(25, 97%, 53%);
 }
 
 .numbers .circle:hover {
   background-color: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
+}
+
+.back {
+  padding: 45px 40px;
+  align-items: center;
+  display: none;
+}
+
+.back .thankyou {
+  text-align: center;
+}
+
+.back .selection {
+  background-color: hsl(213, 9%, 23%);
+  color: hsl(25, 97%, 53%);
+  padding: 5px 10px;
+  border-radius: 50px;
 }
